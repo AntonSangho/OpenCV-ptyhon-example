@@ -21,8 +21,7 @@ while (True):
     # Possible yellow threshold: [20, 110, 170][255, 140, 215]
     # Possible blue threshold: [20, 115, 70][255, 145, 120]
 
-    captured_frame_lab_red = cv2.inRange(captured_frame_lab, np.array([20, 150, 150]),
-                                         np.array([190, 255, 255]))
+    captured_frame_lab_red = cv2.inRange(captured_frame_lab, np.array([20, 150, 150]),np.array([190, 255, 255]))
 
     # Second blur to reduce more noise, easier circle detection
     captured_frame_lab_red = cv2.GaussianBlur(
