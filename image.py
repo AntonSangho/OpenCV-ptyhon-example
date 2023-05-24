@@ -1,6 +1,5 @@
 import cv2 
 
-#이미지 데이터를 img라는 변수에 저장
 img = cv2.imread("cat.jpg")
 print(img) 
 
